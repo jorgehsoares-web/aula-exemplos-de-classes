@@ -2,7 +2,7 @@ class Carro:
     def __init__(self, modelo : str, marca : str):
         self.modelo = modelo
         self.marca = marca
-        self.combustivel = 100
+        self.combustivel = 10000000
     
     def fazer_barulho(self):
         if self.combustivel - 2 >= 0:
@@ -12,8 +12,8 @@ class Carro:
            print("Sem combustível para isso!")
     
     def acelerar(self):
-        if self.combustivel - 10 >= 0:
-           self.combustivel -= 10
+        if self.combustivel - 100 >= 0:
+           self.combustivel -= 100
            print(f"{self.modelo} acelerou! \nCombustível: {self.combustivel}")
         else:
            print("Sem combustível para isso!")
